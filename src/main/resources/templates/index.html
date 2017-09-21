@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <h1>Spring Boot</h1>
+    <h2>Me llamo Drewbot</h2>
+    <h3>Como estas?</h3>
+    <p>Lorem Ipsum</p>
+
+    <form action="/" method="post">
+        <input type="text" name="message" placeholder="type a message"/>
+        <input type="text" name="firstName" placeholder="what is your first name?"/>
+        <input type="text" name="lastName" placeholder="what is your last name?"/>
+        <input type="submit" value="save"/>
+    </form>
+
+    <p th:text="'Answer: ' + ${message}"></p>
+    <p>Name: <span th:text="${name}"></span></p>
+</body>
+</html>
